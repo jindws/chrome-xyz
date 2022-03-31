@@ -1,5 +1,4 @@
 import * as React from "react";
-import "../../scss/popup.scss";
 
 export default function List() {
     const [data, setData] = React.useState([]);
