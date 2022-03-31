@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "jindw.xyz",
+  "version": "0.0.1",
+  "description": "jindw.xyz",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "storage"
+  ],
+  "action": {
+    "default_icon": "images/icon.png",
+    "default_title": "jindw.xyz",
+    "default_popup": "html/popup.html"
+  }
+}

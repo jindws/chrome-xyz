@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+.popup-list {
+  width: fit-content;
+  padding: 20px;
+  font-size: 12px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  dd {
+    cursor: pointer;
+    white-space: nowrap;
+    color: #555;
+    margin-inline-start: 0;
+    border-bottom: 1px dashed #e5e5e5;
+    padding: 3px 5px;
+    height: 20px;
+    line-height: 20px;
+    &:hover {
+      color: #ff3c11;
+      background: #f1f1f1;
+    }
+  }
+}
