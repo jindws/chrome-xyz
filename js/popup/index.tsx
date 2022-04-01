@@ -1,6 +1,7 @@
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import List from "./list";
+import Footer from "./footer";
 import "../../scss/popup.scss";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         </a>
       </div>
       <List />
+      <Footer />
     </>
   );
 }

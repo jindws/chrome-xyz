@@ -1,5 +1,10 @@
 ## jindw.xyz 的chrome插件
 
+## 1.2.1
+- 更新新的icon
+- gitlab链接
+- eslint规范
+
 ## 1.2.0
 - 新文章提醒(new)
     - 点击后取消提示
