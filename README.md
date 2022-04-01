@@ -1,5 +1,12 @@
 ## jindw.xyz 的chrome插件
 
+## 1.2.0
+- 新文章提醒(new)
+    - 点击后取消提示
+- 添加缓存,初始化后不会空白
+
+![image](https://jindw.xyz/upload/2022/04/image-cdcb6e5a49a44b87be36cf281747dee9.png)
+
 ## 1.1.0
 - 添加头部链接
 

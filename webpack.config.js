@@ -20,6 +20,11 @@ module.exports = {
         exclude: /node-modules/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.gif$/,
+        exclude: /node-modules/,
+        use: ["file-loader"],
+      },
     ],
   },
   resolve: {
