@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as ReactDom from "react-dom";
+import { createRoot } from "react-dom/client";
 import List from "./list";
 import "../../scss/popup.scss";
 
@@ -13,7 +13,7 @@ function App() {
     <>
       <div className="popup-title">
         welcome to
-        <a onClick={goXYZ} href='javascript:'>
+        <a onClick={goXYZ} href="javascript:">
           jindw.xyz
         </a>
       </div>
@@ -22,4 +22,5 @@ function App() {
   );
 }
 
-ReactDom.render(<App />, document.getElementById("app"));
+const root = createRoot(document.getElementById("app"));
+root.render(<App />);
