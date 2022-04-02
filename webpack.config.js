@@ -3,6 +3,7 @@ module.exports = {
   mode: "production",
   entry: {
     popup: "./js/popup/index.tsx",
+    background: "./js/background/index.tsx",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
