@@ -1,1 +1,1 @@
-(()=>{var e=document.getElementsByTagName("halo-comment")[0].shadowRoot.querySelector("#emotion-toggle span");e&&e.click()})();
+(()=>{var e=document.getElementsByTagName("halo-comment")[0].shadowRoot.querySelector("#emotion-toggle span");e&&e.click(),document.getElementsByClassName("joe_detail__overdue")[0].style.display="none"})();
