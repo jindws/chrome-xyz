@@ -1,0 +1,1 @@
+(()=>{var e=document.getElementsByTagName("halo-comment")[0].shadowRoot.querySelector("#emotion-toggle span");e&&e.click()})();
