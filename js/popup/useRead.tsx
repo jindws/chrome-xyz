@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 export default function useRead(data = []) {
   const [readList, upList] = useState(
@@ -11,11 +11,11 @@ export default function useRead(data = []) {
     localStorage.setItem("list", JSON.stringify(readList));
   }, [readList]);
 
-  function add(fullPath) {
-    if (readList.includes(fullPath)) return;
-    readList.push(fullPath);
-    upList([...readList]);
-  }
+  const add = useCallback((fullPath) => {
+    if (!readList.includes(fullPath)) {
+      upList(readList.concat([fullPath]));
+    }
+  }, [readList]);
 
   return [readList, add];
 }

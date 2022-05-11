@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
+import {useCallback, useEffect, useState} from "react";
 import useRead from "./useRead";
 
 export default function List() {
@@ -20,12 +20,13 @@ export default function List() {
     localStorage.setItem("data", JSON.stringify(data));
   }, [data]);
 
-  function open(url: string) {
+  const open = useCallback((url)=>{
     addRead(url);
     (window as any).chrome.tabs.create({
       url: `https://jindw.xyz/${url}`,
     });
-  }
+  },[])
+
   return (
     <dl className="popup-list">
       {data.map((itm) => {
